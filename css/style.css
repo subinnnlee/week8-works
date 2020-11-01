@@ -1,0 +1,75 @@
+
+.character {
+	font-family: 'Staatliches', cursive;
+	position: absolute; top: 5%; left: 14%;
+	font-size: 30pt;
+}
+
+.charactertim {
+	font-family: 'Staatliches', cursive;
+	position: absolute; top: 5%; right: 14%;
+	font-size: 30pt;
+}
+
+.text {
+	animation-name: textup;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textup {
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.logo {
+	transform: scale(0.1);
+	position: absolute; bottom: -17%; left: -26%;
+
+}
+
+.mp4 {
+    padding-top: 1%;
+    width: 80%; height: 100%;
+	position: relative;
+
+}
+
+.img2 {
+	width: 60vh; height: 43vh; 
+position: absolute; top: 220px; left: 375px;
+opacity: 0%;
+animation-delay: 5s;
+animation-name: img2opacity;
+animation-duration: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: cubic-bezier(.60,.20,1,.04);
+}
+
+@-webkit-keyframes img2opacity {
+	0% {opacity: 0%; width: 60vh; height: 43vh;}
+	
+    70% {opacity: 80%; }
+	100% {opacity: 100%; transform: scale(1.4); margin-left: 200px; } 
+}
+
+.text_all {
+width: 77.5vh; height: 57vh;
+position: absolute; top: 177px; left: 503px;
+opacity: 0%;
+animation-delay: 11s;
+animation-duration: 0.6s;
+animation-name: blink; 
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+animation-timing-function: cubic-bezier(.3,.03,1,.97);
+}
+
+
+@-webkit-keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
